@@ -1,0 +1,19 @@
+<html>
+    <body>
+         <h1>TODO.COM</h1>
+        <form action='{{ path('todo_formlrtraitment')}}' method='post'>
+            Formulaire:<br>
+		{{ form_label(form.nom, "Ajouter une chose a faire:") }}<br>
+            {{ form_errors(form.nom) }}<br>
+            {{ form_widget(form.nom) }}<br>
+            {{ form_label(form.description, "Description de la chose a faire:") }}<br>
+            {{ form_errors(form.description) }}<br>
+            {{ form_widget(form.description) }}<br>
+            {{ form_label(form.date, "Faire au plus tard:") }}<br>
+            {{ form_errors(form.date) }}<br>
+            {{ form_widget(form.date) }}<br>
+            {{ form_rest(form) }}
+        </form>
+          
+    </body>
+</html>

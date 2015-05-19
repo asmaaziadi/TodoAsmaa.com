@@ -1,0 +1,12 @@
+todo_homepage:
+    pattern:  /
+    defaults: { _controller: TodoBundle:Default:acceuil }
+todo_formulaire:
+    pattern:  /formulaire
+    defaults: { _controller: TodoBundle:Default:ajtFormulaire }
+todo_formlrtraitment:
+    pattern:  /ajout
+    defaults: { _controller: TodoBundle:Default:traitmentFormulaire }
+todo_detailtache:
+    pattern:  /detail/{id}
+    defaults: { _controller: TodoBundle:Default:detailTache }

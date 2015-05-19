@@ -1,0 +1,19 @@
+Todo\TodoBundle\Entity\Taches:
+    type: entity
+    table: null
+    repositoryClass: Todo\TodoBundle\Entity\TachesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nom:
+            type: string
+            length: 255
+        description:
+            type: text
+        date:
+            type: datetime
+    lifecycleCallbacks: {  }

@@ -1,0 +1,11 @@
+<html>
+    <body>
+    
+         <h1>TODO.COM</h1>
+        {{ details.nom}}:<br>
+        Afaire avant le :<br>
+        {{ details.date|date('Y-m-d h:m:s') }}<br>
+        <a href="{{ path('todo_homepage') }}">Retour</a>
+  
+    </body>
+</html>
